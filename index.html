@@ -68,7 +68,7 @@ background: rgba(48,84,117,1);
       display:grid;
       grid-template-columns: 40%  60%;
     
-     
+      justify-content: space-between;
       }
      
       .leftside ul li a{
@@ -105,6 +105,24 @@ background: rgba(48,84,117,1);
         width:100%;
        text-align:center;S
         font-family: 'Prata', serif;
+     }
+     @media only screen and (max-width: 750px)
+     {
+     .navi{
+        display:none;
+        }
+       #pics{
+         display:none;
+       }
+        #address p{
+        display:none;
+        }
+     .container {
+       display: flex;
+        flex-direction:column;
+    
+     
+      }
      }
 		</style>
 	</head>
