@@ -67,10 +67,14 @@ background: rgba(48,84,117,1);
       .leftside{
       display:grid;
       grid-template-columns: 40%  60%;
-    
+      margin-left:5%;
       justify-content: space-between;
       }
+     .leftside rightsideimg{
+      
+      margin-right:1px%;
      
+      }
       .leftside ul li a{
        text-decoration:none;
       color:white;
@@ -106,6 +110,9 @@ background: rgba(48,84,117,1);
        text-align:center;S
         font-family: 'Prata', serif;
      }
+     #one{
+       display:none;
+     }
      @media only screen and (max-width: 750px)
      {
      .navi{
@@ -128,6 +135,18 @@ background: rgba(48,84,117,1);
     
      
       }
+      .leftside ul{
+        display:none;
+      }
+      .leftside {
+    
+      }
+      #one{
+      display:inline;
+
+       object-fit: scale-down;
+       height:750px;
+      }
      }
 		</style>
 	</head>
@@ -148,6 +167,7 @@ background: rgba(48,84,117,1);
      
       <div id="topheading"><h1>The Law Office of Mikhail's</h1></div>
        <div class="leftside">
+       <div>
 			<ul>
 			<hr>
 			  <li ><a href="#">News</a></li>
@@ -158,19 +178,19 @@ background: rgba(48,84,117,1);
 			  <hr>
 			  <li ><a href="#">Case Status</a></li>
 			  <hr>
-			  <li ><a href="#">Testimony</a></li>
+			  <li ><a href="#address">Location</a></li>
 			  <hr>
 			  <li ><a href="#">Facebook</a></li>
 			  <hr>			
 			</ul>
+		</div>	
 			
-			<img id="pics" src="middle.jpg" height="300" width=auto />
 			<script>
-			var count=0;
+		/*	var count=0;
 			setInterval(a, 3000);
       function a(){
-       var next= "middle.jpg";
-       var sec="background.png";
+       var next= "gavel.jpg";
+       var sec="courthouse.jpg";
        var a = [next,sec];
        
        
@@ -181,19 +201,23 @@ background: rgba(48,84,117,1);
        count=0;
        }
       setInterval(a, 3000);
-      }
+      }*/
       </script>
 		
+		<div id="rightsideimg"><img id="pics" src="gavel.jpg" height="300" width=100% /></div>
 			
       </div>
+      
    <div id="about">
 		<article>We are your Michigan Attorneys working hard to make sure that justice is served.
 		Call the law of Malkahls today!</article>
-		</div>	    
+		</div>	
+		  <div id="one"><img src="courthouse.jpg" width=750px /></div>  
 <div class="container">
 
 <article>
-<img id="pics" src="middle.jpg" height="300" width=auto />
+<h2>Know Your Rights</h2>
+<hr>
 &nbsp; &nbsp;&nbsp; &nbsp;Raising say express had chiefly detract
  demands she. Quiet led own cause three him. 
  Front no party young abode state up. Saved he do
@@ -215,7 +239,8 @@ Gave read use way make spot how nor. In daughter
  Mr my ready guest ye after short at. 
 </article>
 <article>
-<img id="pics" src="middle.jpg" height="300" width=auto />
+<h2>When They Come For You</h2>
+<hr>
 &nbsp; &nbsp;&nbsp; &nbsp; Met defective are allowance 
   two perceived listening consulted contained. 
   It chicken oh colonel pressed excited suppose 
@@ -234,6 +259,8 @@ Gave read use way make spot how nor. In daughter
  Mr my ready guest ye after short at. 
 </article>
 <article>
+<h2>Have Questions Get Free Answers</h2>
+<hr>
 &nbsp; &nbsp;&nbsp; &nbsp;Give lady of they such they sure it. Me contained explained 
 my education. Vulgar as hearts by garret. Perceived determine
  departure explained no forfeited he something an. Contrasted 
@@ -250,7 +277,7 @@ literature. Gay direction neglected but supported yet her.
      Grand Rapids, Mi 49503</br>
      </p>
     
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.7329351896033!2d-85.66255208452449!3d42.96283207915097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819adb93e593afd%3A0xe61b9d16730d8da7!2s330+Fulton+St+E%2C+Grand+Rapids%2C+MI+49503!5e0!3m2!1sen!2sus!4v1538190960873" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>></iframe>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.7329351896033!2d-85.66255208452449!3d42.96283207915097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819adb93e593afd%3A0xe61b9d16730d8da7!2s330+Fulton+St+E%2C+Grand+Rapids%2C+MI+49503!5e0!3m2!1sen!2sus!4v1538190960873" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
    
 </div>
 	</body>
