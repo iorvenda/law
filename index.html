@@ -148,9 +148,9 @@ background: rgba(48,84,117,1);
       }
       #one {
       display:inline;
-      width:750px;
+
        object-fit: scale-down;
-      
+       width:750px;
       }
      }
 		</style>
@@ -171,7 +171,26 @@ background: rgba(48,84,117,1);
       </div>
      
       <div id="topheading"><h1>The Law Office of Mikhail's</h1></div>
-<div id="rightsideimg"><img id="pics" src="gavel.jpg" height="300" width=100% /></div>
+<div  ><img id="pics" src="gavel.jpg" height="300" width=100% /></div>
+<script>
+			var count=0;
+			setInterval(a, 5000);
+      function a(){
+       var next= "gavel.jpg";
+       var sec="courthouse.jpg";
+       var a = [next,sec];
+       
+       
+       document.getElementById("pics").src = a[count];
+       count++;
+       if(count==2)
+       {
+       count=0;
+       }
+      setInterval(a, 5000);
+      }
+      </script>
+		
        <div class="leftside">
        <div>
 			<ul>
@@ -191,25 +210,7 @@ background: rgba(48,84,117,1);
 			</ul>
 		</div>	
 			
-			<script>
-	var count=0;
-			setInterval(a, 5000);
-      function a(){
-       var next= "gavel.jpg";
-       var sec="courthouse.jpg";
-       var a = [next,sec];
-       
-       
-       document.getElementById("pics").src = a[count];
-       count++;
-       if(count==2)
-       {
-       count=0;
-       }
-      setInterval(a, 5000);
-      }
-      </script>
-		
+			
 		
 			
       </div>
