@@ -83,30 +83,28 @@ background: rgba(48,84,117,1);
       #address{
       margin-top:20px;
       height:400px;
-      width:auto;
-      background-color:white;
+      width:100%;
+
       }
      #address p{
       width:200px;
       height:100px;
       margin:auto;
       font-size:120%;
-      padding:10px;
-      background-color:white;
+      color:white;
      }
       #address iframe {
       height:250px;
       width:100%;
-   
+     margin-left:0px;
       text-align:center;
-      padding:10px;
       
      }
      #about{
        margin-top:2%;
        font-size:120%;
        color:white;
-        width:100%;
+        width:95%;
        text-align:center;S
         font-family: 'Prata', serif;
      }
@@ -116,7 +114,6 @@ background: rgba(48,84,117,1);
      @media only screen and (max-width: 375px)
      {
      body{
-	     overflow: hidden;
      margin:0px;
      padding:0px;
        width:375px;
@@ -128,17 +125,20 @@ background: rgba(48,84,117,1);
        #pics{
          display:none;
        }
+       #about{
+         width:95%;
+       }
        #address{
-         background-color: rgba(48,84,117,1);
+
          width:375px;
-         margin:0px;
+         margin-left:0px;
      
        }
         
      .container {
        display: flex;
      flex-direction:column;
-       max-width:375px;
+       max-width:100%;
        margin:0px;
      overflow: hidden;
       }
