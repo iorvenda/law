@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+
+    <title>Mikhail's Law Firm</title>
+    <style media="screen">
+    *{
+      box-sizing: border-box;
+      height: 100%;
+    }
+    body{
+      font-family: "Lato", sans-serif;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto;
+     grid-template-areas:  "t t t t"
+                           "hd hd hd hd"
+                           "mainl  mainl mainl mainl"
+                           "m m m m"
+                            "r r l l"
+                            "b b b b"
+                            "f f f f";
+
+
+  margin: 30px;
+  background-repeat: none;
+  background-position: center;
+  background-color: #5A7378;
+background-image: url("wrongbalancescale.jpg");
+min-height: 100%;
+ background-repeat: no-repeat;
+  -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+    }
+    #maintop {
+      background-repeat: none;
+      background-position: center;
+
+    min-height: 100%;
+     background-repeat: no-repeat;
+      -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+    }
+
+
+#header,#left,#right,#left,#bottom{
+
+}
+    #header{
+        background-color:white;
+       grid-area: hd;
+       border-radius: 5px;
+       box-shadow: -2px -2px black;
+        font-family: 'Old Standard TT', serif;
+        padding: 2%;
+
+    }
+    #left{
+background-color:#e8eaef;
+padding: 20px;
+
+grid-area: l;
+    }
+    #main{
+background-color: #e8eaef;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  margin-bottom: 14%;
+  text-align: center;
+grid-area: m;
+background-color:white;
+letter-spacing: .8px;
+ font-family: Helvetica, sans-serif;
+    }
+    #right{
+        background-color:#e8eaef;
+        grid-area: r;
+        margin: 0;
+        text-align: center;
+        padding: 2%;
+    }
+    #bottom{
+      margin: auto;
+      grid-area: b;
+
+    }
+    footer{
+      display: flex;
+      color:white;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+
+      grid-area: f;
+    }
+    #header, nav,ul, li,a{
+        display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       height: 100%;
+       width: 100%;
+       color: black;
+       font-size: 2vh;
+
+       list-style-type: none;
+       text-decoration: none;
+
+    }
+    #header nav ul  li:hover a{
+      color: orange;
+    }
+
+      #header, nav,ul, li{
+margin: 0 0 0 0;
+      }
+      #title{
+        text-align: center;
+        align-items: center;
+        font-size: 2.9vh;
+       font-family: 'Old Standard TT', serif;
+        grid-area: t;
+        height: 100%;
+        text-shadow: 2px 1px purple;
+        color:white;
+      }
+      .ll{
+        background-color: white;
+        text-align: center;
+        padding: 50px 40px 40px 40px;
+        border-radius: 8px;
+        box-shadow: 2px 2px black;
+      }
+      .rr{
+        background-color: white;
+        text-align: center;
+       padding: 50px 40px 40px 40px;
+        border-radius: 8px;
+        box-shadow: 2px 2px black;
+      }
+      .mainlabel{
+        text-align: center;
+       font-weight: bold;
+       font-size: 150%;
+
+
+      }
+      #mainlabel
+      {
+         padding: 1%;
+         border-left: 1px solid black;
+      }
+      #maintop , pics{
+      object-fit: cover;
+      width: 100%;
+      height: 500px;
+      grid-area: mainl;
+      padding: 0%;
+
+      }
+
+    </style>
+  </head>
+  <body onload="year()">
+    <div  id="title">
+ <label> Your Attorney at Law</label>
+    <h1>Mikhail Albuseiri</h1>
+
+
+    </div>
+  <div id="header">
+  <nav>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="tel:+w6163345530">Call Us</a></li>
+      <li><a href="#bottom">Location</a></li>
+      <li><a href="news.html">Services</a></li>
+    </ul>
+  </nav>
+  </div>
+<div id="maintop">
+ <img  id="pics"src="balancescale.jpg" style="width:100%"alt="">
+</div>
+<script>
+			var count=0;
+			setInterval(a, 5000);
+      function a(){
+       var next= "gavel.gif";
+       var sec="courthouse.gif";
+       var a = [next,sec];
+
+
+       document.getElementById("pics").src = a[count];
+       count++;
+       if(count==2)
+       {
+       count=0;
+       }
+      setInterval(a, 5000);
+      }
+      </script>
+  <div id="main">
+    <div id="mainlabel">
+
+  <label class="mainlabel" >The Law</label><br><br>
+<img src="courthouse.gif" style="width:100%;height:auto" alt=""><br><br>
+  Looking for some already great
+  color combinations? Our color chart
+  features flat design colors, Google's
+  Material  Looking for some already great
+  color combinations? Our color chart
+  features flat Looking for some already great
+   color combinations? Our color chart
+  features flat design colors,Material  Looking for some already great
+  color combinations? Our color chart
+  features flat Looking for some already great
+   color combinations Google's
+  Material design scheme and the classic
+  web safe color palette, all with Hex
+  color codes.
+    </div>
+    <div id="mainlabel">
+
+  <label class="mainlabel" >Know Your Rights</label><br><br>
+<img src="balancescale.jpg" style="height:50%; width:80%"alt=""><br><br>
+  Looking for some already great
+  color combinations? Our color chart
+  features flat design colors, Google's
+  Material  Looking for some already great
+  color combinations? Our color chart
+  features flat Looking for some already great
+   color combinations? Our color chart
+  features flat design colors, Google's
+  Material design scheme and the classic
+  web safe color palette, all with Hex
+  color codes.
+  Looking for some already great color
+  combinations? Our color chart
+  features flat design colors, Google's Mate design colors, Google's
+  Material design scheme and the classic
+  web safe color palette, all with Hex
+  color codes.
+  Looking for some already great color
+  combinations? Our color chart
+  features flat design colors, Google's Matedesign scheme and the classic
+  web safe color palette, all with Hex
+  color codes.
+  Looking for some already great color
+  combinations? Our color chart
+  features flat design colors, Google's Mate
+    </div>
+
+    <div id="mainlabel">
+
+<label class="mainlabel" >Lets Walk this walk Hand in Hand</label><br><br>
+<img src="professional.jpg " alt="">
+Looking for some already great
+ color combinations? Our color chart
+features flat design colors, Google's
+Material  Looking for some already great
+  color combinations? Our color chart
+ features flat Looking for some already great
+   color combinations? Our color chart
+  features flat design colors, Google's
+  Material design scheme and the classic
+  web safe color palette, all with Hex
+  color codes.
+  Looking for some already great color
+  combinations? Our color chart
+  features flat design colors, Google's Mate design colors, Google's
+ Material design scheme and the classic
+ web safe color palette, all with Hex
+ color codes.
+ Looking for some already great color
+ combinations? Our color chart
+ features flat design colors, Google's Matedesign scheme and the classic
+web safe color palette, all with Hex
+color codes.
+Looking for some already great color
+combinations? Our color chart
+features flat design colors, Google's Mate
+    </div>
+
+  </div>
+
+  <div id="right">
+ <div class="rr">
+<label style="font-size:140%;font-weight:bold">Justice </label><br>
+   Looking for some already great
+    color combinations? Our color chart
+   features flat design colors, Google's
+   Material design scheme and the classic
+   web safe color palette, all with Hex
+   color codes.
+   Looking for some already great color
+   combinations? Our color chart
+   features flat design colors, Google's Mate
+ </div>
+
+
+
+   </div>
+   <div id="right">
+  <div class="rr">
+ <label style="font-size:140%;font-weight:bold">Justice </label><br>
+    Looking for some already great
+     color combinations? Our color chart
+    features flat design colors, Google's
+    Material design scheme and the classic
+    web safe color palette, all with Hex
+    color codes.
+    Looking for some already great color
+    combinations? Our color chart
+    features flat design colors, Google's Mate
+  </div>
+
+
+
+  </div>
+  <div id="left">
+
+    <div class="ll">
+      <label style="font-size:140%;font-weight:bold">We walk with You </label><br>
+      Stuning  for some already great
+       color combinations? Our color chart
+      features flat design colors, Google's
+      Material design scheme and the classic
+      web safe color palette, all with Hex
+      color codes.
+      Looking for some already great color
+      combinations? Our color chart
+      features flat design colors, Google's Mate
+    </div>
+  </div>
+
+  <div id="bottom">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.7329351896033!2d-85.66255208452449!3d42.96283207915097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819adb93e593afd%3A0xe61b9d16730d8da7!2s330+Fulton+St+E%2C+Grand+Rapids%2C+MI+49503!5e0!3m2!1sen!2sus!4v1549440602424" width="900px" height="10px" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <script >
+  function year() {
+    var  year = new Date();
+    var years = year.getFullYear();
+    document.getElementById("years").innerHTML="copy @ mikhail"+" "+years;
+  }
+
+  </script>
+  <footer style="text-align:center; font-size:80%" id="years"></footer>
+  </body>
+
+</html>
