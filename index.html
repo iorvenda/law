@@ -1,361 +1,462 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+  <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
-
-    <title>Mikhail's Law Firm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant:wght@300;400&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style media="screen">
-    *{
-      box-sizing: border-box;
-      height: 100%;
-    }
     body{
-      font-family: "Lato", sans-serif;
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      grid-template-rows: auto auto auto auto auto auto auto;
-     grid-template-areas:  "t t t t"
-                           "hd hd hd hd"
-                           "mainl  mainl mainl mainl"
-                           "m m m m"
-                            "r r l l"
-                            "b b b b"
-                            "f f f f";
-
-
-  margin: 30px;
-  background-repeat: none;
-  background-position: center;
-  background-color: #5A7378;
-background-image: url("wrongbalancescale.jpg");
-min-height: 100%;
- background-repeat: no-repeat;
-  -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-  grid-column-gap: 12px;
-  grid-row-gap: 12px;
+      margin:0;
+      padding: 0;
+      font-family: 'Cormorant', serif;
+  font-family: 'Cormorant Garamond', serif;
     }
-    #maintop {
-      background-repeat: none;
-      background-position: center;
-
-    min-height: 100%;
-     background-repeat: no-repeat;
-      -webkit-background-size: cover;
-       -moz-background-size: cover;
-       -o-background-size: cover;
-       background-size: cover;
-    }
-
-
-#header,#left,#right,#left,#bottom{
+      .upptertop{
+        width: 100%;
+        height: 40px;
+        background-color: #1A5287;
+      }
+.mobile-container{
+ display: none;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 
 }
-    #header{
-        background-color:white;
-       grid-area: hd;
-       border-radius: 5px;
-       box-shadow: -2px -2px black;
-        font-family: 'Old Standard TT', serif;
-        padding: 2%;
 
-    }
-    #left{
-background-color:#e8eaef;
-padding: 20px;
+.topnav #myLinks {
+  display: none;
+}
 
-grid-area: l;
-    }
-    #main{
-background-color: #e8eaef;
-  display: flex;
-  flex-direction: row;
-  padding: 25px;
-  margin-bottom: 14%;
-  text-align: center;
-grid-area: m;
-background-color:white;
-letter-spacing: .8px;
- font-family: Helvetica, sans-serif;
-    }
-    #right{
-        background-color:#e8eaef;
-        grid-area: r;
-        margin: 0;
-        text-align: center;
-        padding: 2%;
-    }
-    #bottom{
-      margin: auto;
-      grid-area: b;
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
 
-    }
-    footer{
-      display: flex;
-      color:white;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
-      grid-area: f;
-    }
-    #header, nav,ul, li,a{
-        display: flex;
-       flex-direction: row;
-       justify-content: center;
-       align-items: center;
-       height: 100%;
-       width: 100%;
-       color: black;
-       font-size: 2vh;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-       list-style-type: none;
-       text-decoration: none;
-
-    }
-    #header nav ul  li:hover a{
-      color: orange;
-    }
-
-      #header, nav,ul, li{
-margin: 0 0 0 0;
+.active {
+  background-color: black;
+  color: white;
+}
+      #homepage{
+        font-size: 2.3em;
+        font-weight: lighter;
+        text-decoration: none;
       }
-      #title{
-        text-align: center;
-        align-items: center;
-        font-size: 2.9vh;
-       font-family: 'Old Standard TT', serif;
-        grid-area: t;
-        height: 100%;
-        text-shadow: 2px 1px purple;
-        color:white;
+      .nav nav {
+        float: right;
+        font-size: 1.3em;
       }
-      .ll{
-        background-color: white;
-        text-align: center;
-        padding: 50px 40px 40px 40px;
-        border-radius: 8px;
-        box-shadow: 2px 2px black;
+      .icon{
+        display: none;
       }
-      .rr{
-        background-color: white;
-        text-align: center;
-       padding: 50px 40px 40px 40px;
-        border-radius: 8px;
-        box-shadow: 2px 2px black;
+      .nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
       }
-      .mainlabel{
-        text-align: center;
-       font-weight: bold;
-       font-size: 150%;
-
-
-      }
-      #mainlabel
+      .nav nav li
       {
-         padding: 1%;
-         border-left: 1px solid black;
+
       }
-      #maintop , pics{
-      object-fit: cover;
+      .nav nav li{
+        display: inline-block;
+        text-decoration: none;
+      }
+      .nav a{
+        text-decoration: none;
+        color: #333333;
+      }
+      .heading{
+        background-image: url("background.jpeg");
+        background-size: cover;
+         width: 100%;
+        height: 400px;
+      }
+      .heading label{
+        display: block;
+        font-size: 3em;
+        color: white;
+         text-align: center;
+
+      }
+      .heading label{
+         padding-top:100px;
+      }
+      #about{
+        display: block;
+         margin: 0 auto;
+         font-size:1.2em;
+         padding: 4px;
+         background-color:  #1A5287;
+         width: 300px;
+    border-radius: 2px;
+      }
+      #about, a{
+        text-decoration: none;
+        padding: 20px;
+        color: white;
+      }
+      .content{
+   padding-top:40px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+          width: 80%;
+          margin: 0 auto;
+
+      }
+      .image img{
+        border-radius: 50%;
+        border: 1px solid black;
+      }
+      .image{
+       width: 253px;
+       display: grid;
+       grid-template-columns: auto;
+      }
+      .image article{
+        text-align: center;
+     font-style: italic;
+     letter-spacing: 1px;
+      }.article{
+        line-height: 35px;
+         font-size: 1.4em;
+        color: #333333;
+      }
+      .content .rightarticle label{
+       font-size: 2.7em;
+       font-weight: lighter;
+      }
+      .information {
+        margin:4px;
+        padding: 0;
+      }
+    .information a{
+      color:#739900;
+      display: block;
+      text-align: center;
+      line-height:2px;
+      font-size: 1.4em;
+      }
+      .reviews{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color:#e6f5ff;
+      }
+      .reviews div{
+        background-color: white;
+        margin: 40px;
+        padding: 45px 30px 25px 30px;
+        border-radius: 8px;
+        font-size: 1.3em;
+      }
+      .reviews_label{
+        display: block;
+        text-align: center;
+        padding: 20px;
+        font-size: 3em;
+          background-color:#e6f5ff;
+      }
+      .reviews label{
+        display: block;
+        text-align: center;
+        font-size: 1.6em;
+      }
+      article label{
+        color: #a6a6a6;
+        font-size: 1em;
+      }
+      .footer{
+        width: 70%;
+        margin: auto;
+      }
+      @media screen and (max-width: 375px) {
+   body{
+     max-width: 375px;
+
+   }
+   .mobile-container{
+    display: block;
+   }
+   .upptertop{
+     width: 375px;
+   }#homepage{
+     display: block;
+     background-color: lightgray;
+width: 375px;
+     text-align: center;
+   }
+   .nav{
+     width: 100%;
+
+   }
+   .icon{
+     display: inline-block;
+     float: right;
+   }
+#homepage{
+  display: block;
+  width: 100%;
+}
+
+   .heading{
+     background-image: url("background.jpeg");
+     background-size: cover;
       width: 100%;
-      height: 500px;
-      grid-area: mainl;
-      padding: 0%;
+     height: auto;
+     padding: 14px;
 
+   }
+   .heading label{
+     display: block;
+     font-size: 2.4em;
+     color: white;
+      text-align: center;
+
+   }
+   .upptertop{
+     width: 100%;
+     height: 40px;
+     background-color: #1A5287;
+   }
+   #about{
+     display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-size:1em;
+      padding: 1px;
+      background-color:  #1A5287;
+      width: 250px;
+ border-radius: 2px;
+   }
+   #about, a{
+     text-decoration: none;
+     padding: 20px;
+     color: white;
+   }.content{
+      width: 375px;
+      display: grid;
+      grid-template-columns: auto;
+     margin: 0 auto;
+     }
+     img{
+       display: block;
+       margin:0 auto;
+       width:250px;
+     }
+     .reviews{
+        max-width: 375px;
+        display: grid;
+        grid-template-columns: auto;
+     }
+     .reviews div{
+       background-color: white;
+       margin: 15px;
+       padding: 45px 30px 55px 30px;
+       border-radius: 8px;
+     }  .content .rightarticle label{
+        font-size: 1.7em;
+        font-weight: lighter;
+        display: block;
+         margin: 0 auto;
+        padding: 28px;
+        color: lightblue;
+
+       }
+       .content .rightarticle {
+
+         display: block;
+         text-align: center;
+         padding: 28px;
+       }
+       .leftsideimage{
+         display: block;
+         text-align: center;
+          width: 375px;
+       }
+       .information {
+         display: block;
+         text-align: center;
+
+
+
+       }
+  .nav nav ul li{
+    display: none;
+  }.nav {
+
+  }
+  .upptertop ul{
+    float: right;
+    list-style: none;
+  }
+  .upptertop ul li ul{
+    display: none;
+  }
       }
-
     </style>
   </head>
-  <body onload="year()">
-    <div  id="title">
- <label> Your Attorney at Law</label>
-    <h1>Mikhail Albuseiri</h1>
+  <body>
+<div class="upptertop">
+  <div class="mobile-container">
 
-
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active">Makhail's Law</a>
+    <div id="myLinks">
+      <a href="#news">Practice</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">Resourse</a>
     </div>
-  <div id="header">
-  <nav>
-
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="tel:+w6163345530">Call Us</a></li>
-      <li><a href="#bottom">Location</a></li>
-      <li><a href="news.html">Services</a></li>
-    </ul>
-  </nav>
-  </div>
-<div id="maintop">
- <img  id="pics"src="balancescale.jpg" style="width:100%"alt="">
-</div>
-<script>
-			var count=0;
-			setInterval(a, 5000);
-      function a(){
-       var next= "gavel.gif";
-       var sec="courthouse.gif";
-       var a = [next,sec];
-
-
-       document.getElementById("pics").src = a[count];
-       count++;
-       if(count==2)
-       {
-       count=0;
-       }
-      setInterval(a, 5000);
-      }
-      </script>
-  <div id="main">
-    <div id="mainlabel">
-
-  <label class="mainlabel" >The Law</label><br><br>
-<img src="courthouse.gif" style="width:100%;height:auto" alt=""><br><br>
-  Looking for some already great
-  color combinations? Our color chart
-  features flat design colors, Google's
-  Material  Looking for some already great
-  color combinations? Our color chart
-  features flat Looking for some already great
-   color combinations? Our color chart
-  features flat design colors,Material  Looking for some already great
-  color combinations? Our color chart
-  features flat Looking for some already great
-   color combinations Google's
-  Material design scheme and the classic
-  web safe color palette, all with Hex
-  color codes.
-    </div>
-    <div id="mainlabel">
-
-  <label class="mainlabel" >Know Your Rights</label><br><br>
-<img src="balancescale.jpg" style="height:50%; width:80%"alt=""><br><br>
-  Looking for some already great
-  color combinations? Our color chart
-  features flat design colors, Google's
-  Material  Looking for some already great
-  color combinations? Our color chart
-  features flat Looking for some already great
-   color combinations? Our color chart
-  features flat design colors, Google's
-  Material design scheme and the classic
-  web safe color palette, all with Hex
-  color codes.
-  Looking for some already great color
-  combinations? Our color chart
-  features flat design colors, Google's Mate design colors, Google's
-  Material design scheme and the classic
-  web safe color palette, all with Hex
-  color codes.
-  Looking for some already great color
-  combinations? Our color chart
-  features flat design colors, Google's Matedesign scheme and the classic
-  web safe color palette, all with Hex
-  color codes.
-  Looking for some already great color
-  combinations? Our color chart
-  features flat design colors, Google's Mate
-    </div>
-
-    <div id="mainlabel">
-
-<label class="mainlabel" >Lets Walk this walk Hand in Hand</label><br><br>
-<img src="professional.jpg " alt="">
-Looking for some already great
- color combinations? Our color chart
-features flat design colors, Google's
-Material  Looking for some already great
-  color combinations? Our color chart
- features flat Looking for some already great
-   color combinations? Our color chart
-  features flat design colors, Google's
-  Material design scheme and the classic
-  web safe color palette, all with Hex
-  color codes.
-  Looking for some already great color
-  combinations? Our color chart
-  features flat design colors, Google's Mate design colors, Google's
- Material design scheme and the classic
- web safe color palette, all with Hex
- color codes.
- Looking for some already great color
- combinations? Our color chart
- features flat design colors, Google's Matedesign scheme and the classic
-web safe color palette, all with Hex
-color codes.
-Looking for some already great color
-combinations? Our color chart
-features flat design colors, Google's Mate
-    </div>
-
-  </div>
-
-  <div id="right">
- <div class="rr">
-<label style="font-size:140%;font-weight:bold">Justice </label><br>
-   Looking for some already great
-    color combinations? Our color chart
-   features flat design colors, Google's
-   Material design scheme and the classic
-   web safe color palette, all with Hex
-   color codes.
-   Looking for some already great color
-   combinations? Our color chart
-   features flat design colors, Google's Mate
- </div>
-
-
-
-   </div>
-   <div id="right">
-  <div class="rr">
- <label style="font-size:140%;font-weight:bold">Justice </label><br>
-    Looking for some already great
-     color combinations? Our color chart
-    features flat design colors, Google's
-    Material design scheme and the classic
-    web safe color palette, all with Hex
-    color codes.
-    Looking for some already great color
-    combinations? Our color chart
-    features flat design colors, Google's Mate
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
 
 
 
-  </div>
-  <div id="left">
-
-    <div class="ll">
-      <label style="font-size:140%;font-weight:bold">We walk with You </label><br>
-      Stuning  for some already great
-       color combinations? Our color chart
-      features flat design colors, Google's
-      Material design scheme and the classic
-      web safe color palette, all with Hex
-      color codes.
-      Looking for some already great color
-      combinations? Our color chart
-      features flat design colors, Google's Mate
-    </div>
+  <!-- End smartphone / tablet look -->
   </div>
 
-  <div id="bottom">
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.7329351896033!2d-85.66255208452449!3d42.96283207915097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819adb93e593afd%3A0xe61b9d16730d8da7!2s330+Fulton+St+E%2C+Grand+Rapids%2C+MI+49503!5e0!3m2!1sen!2sus!4v1549440602424" width="900px" height="10px" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
-  <script >
-  function year() {
-    var  year = new Date();
-    var years = year.getFullYear();
-    document.getElementById("years").innerHTML="copy @ mikhail"+" "+years;
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
   }
-
   </script>
-  <footer style="text-align:center; font-size:80%" id="years"></footer>
-  </body>
 
+</div>
+<div class="header">
+  <div class="nav">
+    <a id="homepage"href="#">MAKHAIL LAW</a>
+   <nav id="myTopnav">
+     <ul>
+       <li><a href="#">Practice</a></li>
+       <li><a href="#">Free Resources</a></li>
+       <li><a href="#">Contact</a></li>
+     </ul>
+   </nav>
+  </div>
+ <div class="heading">
+   <label for="">WELCOME TO MAKHAILS' LAW</label>
+  <a href="#" id="about"> ABOUT ATTORNEY MAKHAIL</a>
+ </div>
+</div>
+<div class="content">
+<div class="image">
+<div class="leftsideimage">
+  <img src="4.jpg" alt="" width="250px">
+    <article class="">
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+    </article>
+</div>
+  <div class="information">
+    <a href="#">Get a Consultation</a>
+    <a href="#">555-555-5555</a>
+    <a href="mailto:email@yahoo.com">email@yahoo.com</a>
+  </div>
+</div>
+<div class="rightarticle">
+  <label>Fighting for Michigan</label>
+  <article class="article">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+ nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+ reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+ pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+ culpa
+ qui officia deserunt mollit anim id est laborum.
+  </article>
+</div>
+</div>
+<div class="reviews_label">
+  <label>REVIEWS</label>
+</div>
+<div class="reviews">
+
+  <div class="">
+  <label for="">James Katd</label>
+  <article class="">
+    <label for="">Jan 4,2013</label>
+    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+     reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+     pariatur. Excepteur sint occaecat cupidatat non
+  </article>
+  </div>
+  <div class="">
+<label for="">Jafa Katd</label>
+<article class="">
+  <label for="">Jan 24,2013</label>
+  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+   nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+   reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+   pariatur. Excepteur sint occaecat cupidatat non
+</article>
+  </div>
+  <div class="">
+<label for="">Jikes K. Katd</label>
+<article class="">
+  <label for="">June 12,2015</label>
+  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+   nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+   reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+   pariatur. Excepteur sint occaecat cupidatat non
+</article>
+  </div>
+  <div class="">
+<label for="">Kingsing dolad</label>
+<article class=""><label for="">June 22,2011</label>
+  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+   nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+   reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+   pariatur. Excepteur sint occaecat cupidatat non
+</article>
+  </div>
+
+</div>
+<div class="practices">
+
+</div>
+<div class="footer">
+<div class="address" >
+<p style="color:blue"443 malton st. SW<br>
+Grand Rpaids,MI<br>
+40930.<br>
+tel: 616-555-5555</p><br>
+<a href="mailto:email@yahoo.com">email@yahoo.com</a>
+</div>
+<div class="googlemap">
+
+</div>
+
+</div>
+  </body>
 </html>
