@@ -154,7 +154,9 @@
       display: block;
       text-align: center;
       line-height:2px;
-      font-size: 1.4em;
+      font-size: 90%;
+      margin: 0;
+      padding:10px;
       }
       .reviews{
         display: grid;
@@ -255,10 +257,11 @@ box-sizing: border-box;
       grid-template-columns: auto;
      margin: 0 auto;
      }
-     img{
+     .image img{
        display: block;
        margin:0 auto;
-       width:250px;
+       width:200px;
+       height: 200px;
      }
      .reviews{
         max-width: 375px;
@@ -268,7 +271,7 @@ box-sizing: border-box;
      .reviews div{
        background-color: white;
        margin: 15px;
-       padding: 45px 30px 55px 30px;
+       padding: 40px 10px 55px 10px;
        border-radius: 8px;
      }  .content .rightarticle label{
         font-size: 1.7em;
@@ -311,6 +314,12 @@ box-sizing: border-box;
     display: none;
   }
       }
+        @media only screen and (max-width: 375px)
+        {
+          body{
+            max-width: 375px;
+          }
+        }
     </style>
   </head>
   <body>
@@ -366,7 +375,7 @@ box-sizing: border-box;
 <div class="content">
 <div class="image">
 <div class="leftsideimage">
-  <img src="4.jpg" alt="" width="250px">
+  <img src="professional.jpeg" alt="" height="250px" width="250px">
     <article class="">
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
       do eiusmod tempor incididunt ut labore et dolore magna aliqua"
